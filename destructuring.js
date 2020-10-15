@@ -74,11 +74,12 @@ return utah + california + texas + arizona;
 
 //Code Here
 
-function ingredients( obj ){
-
+function ingredients( obj ) {
+let arr = []
 let {carb, fat, protein} = obj
-let newObj.push
-
+  arr.push(carb, fat, protein)
+ 
+  return arr
 
 }
 
@@ -97,6 +98,11 @@ let newObj.push
 */
 
 //Code Here
+function largeNumbers({first, second, third}){
+  const smallestNum = Math.min(first, second, third)
+  return smallestNum
+
+}
 
 
 
@@ -109,5 +115,15 @@ let newObj.push
 */
 
 //Code Here
+function numberGroups({a,b,c}){
+  if(a.length > b.length && c.length && a.length > c.length){
+    return a
+  } else if(b.length > a.length && c.length && b.length > a.length){
+    return b 
+  } else {
+    return c
+  }
+  
 
 
+}

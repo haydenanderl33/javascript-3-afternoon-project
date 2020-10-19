@@ -40,8 +40,17 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let string = ""
+  for(let key in obj){
+    string += obj[key] 
+
+
+    
+  }
+  return string
 }
+
+
 
 
 
@@ -54,8 +63,14 @@ function showValues( obj ) {
 */
 
 //Code Here
-
-
+function greaterThan10(obj){
+  for(let key in obj){
+    if(obj[key] > 10){
+      obj[key] = 0
+    }
+  }
+  return obj
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -66,8 +81,13 @@ function showValues( obj ) {
 */
 
 //Code Here
-
-
+function double(obj){
+  for(let key in obj){
+    var timesTwo = obj[key]*2
+    obj[key] = timesTwo
+  }
+  return obj
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -111,9 +131,11 @@ function showValues( obj ) {
 */
 
 //Code Here
-
-
-
+function removePassword(obj){
+  delete obj.password;
+  return obj;
+  
+}
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
@@ -130,7 +152,11 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-
+for(let key in obj){
+  if(obj[key] > 100){
+    delete obj[key];
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
